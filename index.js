@@ -1,5 +1,6 @@
 // Se importa la dependencia dotenv para administrar las variables
-// de entorno del archivo .env
+// de entorno del archivo .env}
+let db = require('./config/database');
 require('dotenv').config();
 
 // importando el módulo express
@@ -16,7 +17,8 @@ const app = express();
 
 // MIS RUTAS MIDDLEWARE
 app.get('/',(req,res)=>{
-    res.send("Mi backEnd con ExpressJS");
+    let consulta = db.query('SELECT TABLES');
+    res.send("Mi backEnd con ExpressJS", consulta);
 });
 
 // CONFIGURACIÓN DEL SERVIDOR
