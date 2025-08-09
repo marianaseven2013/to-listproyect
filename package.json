@@ -4,7 +4,7 @@
   "description": "app de tareas",
   "main": "index.js",
   "scripts": {
-    "test": "https://github.com/marianaseven2013/to-listproyect.git"
+    "test": "https://github.com/marianaseven2013/to-listproyect.git#"
   },
   "repository": {
     "type": "git",
